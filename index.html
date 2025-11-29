@@ -426,14 +426,14 @@
             <div class="slide-number">3 / 7</div>
             <h2>📊 Pergerakan Data</h2>
             
-            <h3>📝 State Declaration (Baris 24):</h3>
+            <h3>📝 State Declaration :</h3>
             <div class="code-block">
 <span class="keyword">const</span> [cart, setCart] = <span class="function">useState</span>([]);
 <span class="comment">// cart = Array kosong di awal</span>
 <span class="comment">// setCart = Fungsi untuk update state</span>
             </div>
 
-            <h3>📦 Data Menu Statis (Baris 13-22):</h3>
+            <h3>📦 Data Menu Statis :</h3>
             <div class="code-block">
 <span class="keyword">const</span> MENU_ITEMS = [
   { <span class="string">id</span>: 1, <span class="string">name</span>: <span class="string">"Nasi Goreng Spesial"</span>, <span class="string">price</span>: 21000, 
@@ -472,7 +472,7 @@ cart = [
             <div class="slide-number">4 / 7</div>
             <h2>2️⃣ Fitur Remove Item</h2>
             
-            <h3>📝 Kode dari App.jsx (Baris 33-36):</h3>
+            <h3>📝 Kode dari App.jsx :</h3>
             <div class="code-block">
 <span class="comment">// Hapus dari keranjang berdasarkan cartId</span>
 <span class="keyword">const</span> <span class="function">removeFromCart</span> = (cartId) => {
@@ -481,7 +481,7 @@ cart = [
 };
             </div>
 
-            <h3>🖱️ UI Button di Cart (Baris 177-182):</h3>
+            <h3>🖱️ UI Button di Cart :</h3>
             <div class="code-block">
 <span class="keyword">&lt;button</span>
   <span class="string">onClick</span>={() => <span class="function">removeFromCart</span>(item.cartId)}
@@ -522,7 +522,7 @@ cart = [
             <div class="slide-number">5 / 7</div>
             <h2>3️⃣ Perhitungan Total Otomatis</h2>
             
-            <h3>📝 Kode dari App.jsx (Baris 45):</h3>
+            <h3>📝 Kode dari App.jsx :</h3>
             <div class="code-block">
 <span class="keyword">const</span> totalPrice = cart.<span class="function">reduce</span>((total, item) => {
   <span class="keyword">return</span> total + item.price;
@@ -536,7 +536,7 @@ cart = [
 <span class="comment">// Result: totalPrice = 40000</span>
             </div>
 
-            <h3>💰 Tampilan di UI (Baris 186-192):</h3>
+            <h3>💰 Tampilan di UI:</h3>
             <div class="code-block">
 <span class="keyword">&lt;div</span> <span class="string">className</span>=<span class="string">"flex justify-between items-center"</span><span class="keyword">&gt;</span>
   <span class="keyword">&lt;span&gt;</span>Total Bayar<span class="keyword">&lt;/span&gt;</span>
@@ -574,7 +574,7 @@ cart = [
 )}
             </div>
 
-            <h3>📝 Kode Badge Success (Baris 203-210):</h3>
+            <h3>📝 Kode Badge Success :</h3>
             <div class="code-block">
 {totalPrice > 0 && totalPrice <= 30000 && (
   <span class="keyword">&lt;div</span> <span class="string">className</span>=<span class="string">"bg-green-50 border-2 border-green-300..."</span><span class="keyword">&gt;</span>
